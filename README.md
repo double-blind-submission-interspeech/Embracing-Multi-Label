@@ -45,3 +45,6 @@ double-blind submission for INTERSPEECH 2024
   (all_inclusive) $ bash run_all_MSP_IMPROV_P_Evaluation.sh
   (all_inclusive) $ bash run_all_PODCAST_P_Evaluation.sh
  ```
+
+## Check Results
+* All **check point** files will be in the folder, **model**
