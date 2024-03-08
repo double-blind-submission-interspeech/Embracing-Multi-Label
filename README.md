@@ -18,9 +18,9 @@ double-blind submission for INTERSPEECH 2024
 * Step0: Install Conda [Link](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
 * Step1:
   ``` bash
-  $ conda create -n all_inclusive python=3.10 -y
-  $ conda activate all_inclusive
-  $ conda install pip
+  (base) $ conda create -n all_inclusive python=3.10 -y
+  (base) $ conda activate all_inclusive
+  (all_inclusive) $ conda install pip
   ```
 * Step2: Install Pytorch [Link](https://pytorch.org/get-started/locally/)
 * Step3: Install HuggingFace [Link](https://huggingface.co/docs/transformers/installation)
@@ -30,18 +30,18 @@ double-blind submission for INTERSPEECH 2024
 * Run **bash run_all_{database_nanme}.sh** to automatically train and evaluate the baseline models
 * For instance:
   ``` bash
-  $ bash run_all_BIIC_PODCAST_P.sh
-  $ bash run_all_IEMOCAP.sh
-  $ bash run_all_MSP_IMPROV_P.sh
-  $ bash run_all_PODCAST_P.sh
+  (all_inclusive) $ bash run_all_BIIC_PODCAST_P.sh
+  (all_inclusive) $ bash run_all_IEMOCAP.sh
+  (all_inclusive) $ bash run_all_MSP_IMPROV_P.sh
+  (all_inclusive) $ bash run_all_PODCAST_P.sh
   ```
 
 ## Evaluate SER systems
 * Run **bash run_all_{database_nanme}_Evaluation.sh** to automatically train and evaluate the baseline models
 * For instance:
   ``` bash
-  $ bash run_all_BIIC_PODCAST_P_Evaluation.sh
-  $ bash run_all_IEMOCAP_Evaluation.sh
-  $ bash run_all_MSP_IMPROV_P_Evaluation.sh
-  $ bash run_all_PODCAST_P_Evaluation.sh
+  (all_inclusive) $ bash run_all_BIIC_PODCAST_P_Evaluation.sh
+  (all_inclusive) $ bash run_all_IEMOCAP_Evaluation.sh
+  (all_inclusive) $ bash run_all_MSP_IMPROV_P_Evaluation.sh
+  (all_inclusive) $ bash run_all_PODCAST_P_Evaluation.sh
  ```
