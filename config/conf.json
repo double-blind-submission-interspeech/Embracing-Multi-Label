@@ -2,11 +2,6 @@
     "config_root": "config/config_files",
     "BIIC-PODCAST1.01_ALL_primary": "biic-podcast/1.01_eight.json",
     "MSP-PODCAST1.11_ALL_primary": "msp-podcast/1.11_eight.json",
-    "BIIC-PODCAST1.01_ALL_secondary": "biic-podcast/1.01_sixteen.json",
-    "MSP-PODCAST1.11_ALL_secondary": "msp-podcast/1.11_sixteen.json",
     "USC-IEMOCAP_ALL_secondary": "iemocap/nine.json",
-    "NTHU-NNIME_ALL_secondary": "nnime/eleven.json",
     "MSP-IMPROV_four_primary": "improv/four.json",
-    "MSP-IMPROV_ALL_secondary": "improv/ten.json",
-    "CREMA-D_ALL_primary": "crema-d/six.json"
 }
