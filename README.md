@@ -25,15 +25,21 @@ double-blind submission for INTERSPEECH 2024
 * Step2: Install Pytorch [Link](https://pytorch.org/get-started/locally/)
 * Step3: Install HuggingFace [Link](https://huggingface.co/docs/transformers/installation)
 
-## Change config.json
-- Open config.json
-```json
-{
-    "wav_dir": "directory that contains all wav files of MSP-Podcast v1.11",
-    "label_path": "file path of labels_consensus.csv for MSP-Podcast v1.11"
-}
-```
-## Train and Evaluate SER systems
-* Run **bash run.sh** to automatically train and evaluate the baseline models
+
+## Train SER systems
+* Run **bash run_all_{database_nanme}.sh** to automatically train and evaluate the baseline models
+* For instance:
+  * run_all_BIIC_PODCAST_P.sh
+  * run_all_IEMOCAP.sh
+  * run_all_MSP_IMPROV_P.sh
+  * run_all_PODCAST_P.sh
+
+## Evaluate SER systems
+* Run **bash run_all_{database_nanme}_Evaluation.sh** to automatically train and evaluate the baseline models
+* For instance:
+  * run_all_BIIC_PODCAST_P_Evaluation.sh
+  * run_all_IEMOCAP_Evaluation.sh
+  * run_all_MSP_IMPROV_P_Evaluation.sh
+  * run_all_PODCAST_P_Evaluation.sh
  
 
