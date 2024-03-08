@@ -9,7 +9,7 @@ label_learning=soft-label
 epochs=50
 batchsize=32
 
-for label_rule in D; do
+for label_rule in M P D; do
 for partition_number in 1; do 
 for data_mode in primary; do
 corpus_type=${corpus}_${num_classes}_${data_mode}
@@ -33,25 +33,6 @@ python -u train.py \
 --partition_number  $partition_number \
 --data_mode         $data_mode \
 --model_path        model/${model_type}/${corpus_type}/${data_mode}/${label_rule}/partition${partition_number}/
-
-#Evaluation
-# python -u test.py \
-# --device            cuda \
-# --model_type        $model_type \
-# --corpus_type       $corpus_type \
-# --seed              $seed \
-# --batch_size        $batchsize \
-# --hidden_dim        1024 \
-# --num_layers        2 \
-# --output_num        $output_num \
-# --label_type        $label_type \
-# --label_learning    $label_learning \
-# --corpus            $corpus \
-# --num_classes       $num_classes \
-# --label_rule        $label_rule \
-# --partition_number  $partition_number \
-# --data_mode         $data_mode \
-# --model_path        model/${model_type}/${corpus_type}/${data_mode}/${label_rule}/partition${partition_number}/
 
 done;
 done;
