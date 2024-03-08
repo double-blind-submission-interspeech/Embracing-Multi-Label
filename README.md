@@ -3,9 +3,9 @@ double-blind submission for INTERSPEECH 2024
 
 # Requirement
 * Python ==3.10
-* Conda
-* Pytorch
-* HuggingFace
+* Conda ==23.11.0
+* Pytorch ==2.20 
+* HuggingFace ==4.36.2
 ## Setup environments
 * Step0: Install Conda
 * Step1:
