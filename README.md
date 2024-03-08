@@ -48,5 +48,5 @@ double-blind submission for INTERSPEECH 2024
   ```
 
 # Check Results
-* All **check point ** files will be in the folder, **model**
+* All **check point** files will be in the folder, **model**
   
