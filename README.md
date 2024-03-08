@@ -15,7 +15,7 @@ double-blind submission for INTERSPEECH 2024
   * [BIIC-PODCAST1.01](https://biic.ee.nthu.edu.tw/open_resource_detail.php?id=63)
   
 ## Setup environments
-* Step0: Install Conda
+* Step0: Install Conda [Link](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
 * Step1:
   ``` bash
   $ conda create -n all_inclusive python=3.10 -y
