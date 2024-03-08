@@ -1,26 +1,17 @@
-corpus=MSP-IMPROV
+output_num=8
+corpus=MSP-PODCAST1.11
 
 model_type=wav2vec2-large-robust
+num_classes=ALL 
 seed=100
 label_type=categorical
 label_learning=soft-label 
 epochs=50
 batchsize=32
 
-# label_rule=M       #P, M, D
-# partition_number=2
-# data_mode=primary #primary or secondary
-
-for label_rule in M P D; do
-for partition_number in 1 2 3 4 5 6; do
+for label_rule in D; do
+for partition_number in 1; do 
 for data_mode in primary; do
-if [[ ${data_mode} == "primary" ]]; then
-    output_num=4
-    num_classes=four 
-elif [[ ${data_mode} == "secondary" ]]; then
-    output_num=10
-    num_classes=ALL 
-fi
 corpus_type=${corpus}_${num_classes}_${data_mode}
 # Training
 python -u train.py \
@@ -61,6 +52,7 @@ python -u train.py \
 # --partition_number  $partition_number \
 # --data_mode         $data_mode \
 # --model_path        model/${model_type}/${corpus_type}/${data_mode}/${label_rule}/partition${partition_number}/
+
 done;
 done;
 done
