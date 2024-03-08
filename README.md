@@ -25,24 +25,8 @@ double-blind submission for INTERSPEECH 2024
     "label_path": "file path of labels_consensus.csv for MSP-Podcast v1.11"
 }
 ```
-## Train SER systems
-``` bash
-## Train FT baseline
-$ python train_ft_dim_ser.py \
-    --seed=0 \
-    --ssl_type=wavlm-large \
-    --batch_size=32 \
-    --accumulation_steps=4 \
-    --lr=1e-5 \
-    --epochs=10 \
-    --model_path=${model_path}
-```
-## Evaluate baseline model
-``` bash
-$ python eval_dim_ser.py \
-    --ssl_type=wavlm-large \
-    --model_path=${model_path}
-```
+## Train and Evaluate SER systems
+* 
 * Run **bash run.sh** to automatically train and evaluate the baseline models
  
 
