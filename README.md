@@ -6,6 +6,14 @@ double-blind submission for INTERSPEECH 2024
 * Conda ==23.11.0
 * Pytorch ==2.20 
 * HuggingFace ==4.36.2
+
+# Dataset Preparation
+* Download WAV files into the folder for each database (e.g., data/MSP-PODCAST1.11/Audios) by submitting the EULA form for the six databases.
+  * [USC-IEMOCAP](https://sail.usc.edu/iemocap/iemocap_release.htm)
+  * [MSP-IMPROV](https://ecs.utdallas.edu/research/researchlabs/msp-lab/MSP-Improv.html)
+  * [MSP-PODCAST1.11](https://ecs.utdallas.edu/research/researchlabs/msp-lab/MSP-Podcast.html)
+  * [BIIC-PODCAST1.01](https://biic.ee.nthu.edu.tw/open_resource_detail.php?id=63)
+  
 ## Setup environments
 * Step0: Install Conda
 * Step1:
@@ -26,7 +34,6 @@ double-blind submission for INTERSPEECH 2024
 }
 ```
 ## Train and Evaluate SER systems
-* 
 * Run **bash run.sh** to automatically train and evaluate the baseline models
  
 
