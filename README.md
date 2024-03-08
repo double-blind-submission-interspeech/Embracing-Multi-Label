@@ -26,7 +26,7 @@ double-blind submission for INTERSPEECH 2024
 * Step3: Install HuggingFace [Link](https://huggingface.co/docs/transformers/installation)
 
 
-## Train SER systems
+# Train SER systems
 * Run **bash run_all_{database_nanme}.sh** to automatically train and evaluate the baseline models
 * For instance:
   ``` bash
@@ -36,7 +36,8 @@ double-blind submission for INTERSPEECH 2024
   (all_inclusive) $ bash run_all_PODCAST_P.sh
   ```
 
-## Evaluate SER systems
+# Evaluate SER systems
+
 * Run **bash run_all_{database_nanme}_Evaluation.sh** to automatically train and evaluate the baseline models
 * For instance:
   ``` bash
@@ -44,7 +45,8 @@ double-blind submission for INTERSPEECH 2024
   (all_inclusive) $ bash run_all_IEMOCAP_Evaluation.sh
   (all_inclusive) $ bash run_all_MSP_IMPROV_P_Evaluation.sh
   (all_inclusive) $ bash run_all_PODCAST_P_Evaluation.sh
- ```
+  ```
 
-## Check Results
-* All **check point** files will be in the folder, **model**
+# Check Results
+* All **check point ** files will be in the folder, **model**
+  
