@@ -14,7 +14,7 @@ double-blind submission for INTERSPEECH 2024
   * [MSP-PODCAST1.11](https://ecs.utdallas.edu/research/researchlabs/msp-lab/MSP-Podcast.html)
   * [BIIC-PODCAST1.01](https://biic.ee.nthu.edu.tw/open_resource_detail.php?id=63)
   
-## Setup environments
+## Setup Environments
 * Step0: Install Conda [Link](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
 * Step1:
   ``` bash
@@ -25,8 +25,19 @@ double-blind submission for INTERSPEECH 2024
 * Step2: Install Pytorch [Link](https://pytorch.org/get-started/locally/)
 * Step3: Install HuggingFace [Link](https://huggingface.co/docs/transformers/installation)
 
+# Parameters Definition
+* **output_num**: number of emotions (e.g., 8)
+* **corpus**: database (e.g., MSP-PODCAST1.11)
+  * **Names of the corpus**: MSP-PODCAST1.11, MSP-IMPROV, USC-IEMOCAP, BIIC-PODCAST1.01
+* **model_type**: backbone model (default: wav2vec2-large-robust)
+* **seed**: seed number
+* **label_rule**: aggregation rule (e.g., M, P, or D)
+  * M: Majority rule
+  * P: Plurality rule
+  * D: All-inclusive rule
+* **partition_number**: which partition is the test set (e.g., 1)
 
-# Train SER systems
+# Train SER Systems
 * Run **bash run_all_{database_nanme}.sh** to automatically train and evaluate the baseline models
 * For instance:
   ``` bash
@@ -36,7 +47,7 @@ double-blind submission for INTERSPEECH 2024
   (all_inclusive) $ bash run_all_PODCAST_P.sh
   ```
 
-# Evaluate SER systems
+# Evaluate SER Systems
 
 * Run **bash run_all_{database_nanme}_Evaluation.sh** to automatically train and evaluate the baseline models
 * For instance:
