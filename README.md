@@ -29,17 +29,20 @@ double-blind submission for INTERSPEECH 2024
 ## Train SER systems
 * Run **bash run_all_{database_nanme}.sh** to automatically train and evaluate the baseline models
 * For instance:
-  * run_all_BIIC_PODCAST_P.sh
-  * run_all_IEMOCAP.sh
-  * run_all_MSP_IMPROV_P.sh
-  * run_all_PODCAST_P.sh
+  ``` bash
+  $ bash run_all_BIIC_PODCAST_P.sh
+  $ bash run_all_IEMOCAP.sh
+  $ bash run_all_MSP_IMPROV_P.sh
+  $ bash run_all_PODCAST_P.sh
+  ```
 
 ## Evaluate SER systems
 * Run **bash run_all_{database_nanme}_Evaluation.sh** to automatically train and evaluate the baseline models
 * For instance:
-  * run_all_BIIC_PODCAST_P_Evaluation.sh
-  * run_all_IEMOCAP_Evaluation.sh
-  * run_all_MSP_IMPROV_P_Evaluation.sh
-  * run_all_PODCAST_P_Evaluation.sh
- 
+  ``` bash
+  $ bash run_all_BIIC_PODCAST_P_Evaluation.sh
+  $ bash run_all_IEMOCAP_Evaluation.sh
+  $ bash run_all_MSP_IMPROV_P_Evaluation.sh
+  $ bash run_all_PODCAST_P_Evaluation.sh
+ ```
 
